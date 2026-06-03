@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS staging.load_log (
 TRUNCATE TABLE staging.annonces_raw;
 
 -- 4. Charger le CSV
-copy staging.annonces_raw (
+"""copy staging.annonces_raw (
     annonce_id,
     date_publication,
     titre,
@@ -53,7 +53,7 @@ copy staging.annonces_raw (
 )
 FROM 'C:/Users/user/Documents/New project/data/raw/darkom_listings.csv'
 DELIMITER ','
-CSV HEADER;
+CSV HEADER;"""
 
 -- 5. Mettre à jour les colonnes techniques
 UPDATE staging.annonces_raw

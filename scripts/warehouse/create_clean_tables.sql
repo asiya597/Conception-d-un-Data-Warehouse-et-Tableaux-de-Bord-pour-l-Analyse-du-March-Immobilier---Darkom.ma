@@ -1,7 +1,4 @@
--- Active: 1779180796409@@127.0.0.1@5432@darkom_dwh
 CREATE SCHEMA IF NOT EXISTS clean;
-
-TRUNCATE TABLE clean.annonces_clean;
 
 DROP TABLE IF EXISTS clean.annonces_clean;
 
